@@ -29,7 +29,7 @@ const html = `
 app.use(express.static("public"));
 
 app.get("/api" , (req: Request , res: Response) => {
-    res.send();
+    res.send(html);
 })
 
 app.get("/api/users", (req: Request , res: Response) => {
