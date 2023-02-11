@@ -2,7 +2,7 @@ const fetchData = async () => {
   const API_URL = localStorage.getItem("apiUrl");
 
   if (API_URL) {
-    const response = await fetchData(`${API_URL}/users`);
+    const response = await fetch(`${API_URL}/users`);
     const data = await response.json();
     console.log(data);
   } else {
